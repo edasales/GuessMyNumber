@@ -21,7 +21,7 @@ function randomNumber(min, max, exclude) {
 
 function GameScreen({ number, onGameOver, setRounds }) {
 	const [nTry, setNTry] = useState(randomNumber(1, 99, number))
-	const [description, setDescription] = useState('Make your best bet!!')
+	const [description, setDescription] = useState('Make your best bet!')
 	const [history, setHistory] = useState([])
 
 	useEffect(() => {
